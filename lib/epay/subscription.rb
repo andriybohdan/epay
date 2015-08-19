@@ -75,7 +75,7 @@ module Epay
     end
     
     def delete
-      Epay::Api.request(SUBSCRIPTION_SOAP_URL, 'delete', :subscriptionid => id).success?
+      Epay::Api.request(SUBSCRIPTION_SOAP_URL, 'deletesubscription', :subscriptionid => id).success?
     end
     
     class << self
