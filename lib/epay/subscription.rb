@@ -61,9 +61,10 @@ module Epay
     end
     
     def authorize(params = {})
-      post = Api.default_post_for_params(params.merge({
+      post = Api.default_post_for_params(params)
+      post.merge!({
         :instantcapture => params[:instant_capture] ? '1' : '0'
-      }))
+      })
       
       post[:subscriptionid] = id
       
