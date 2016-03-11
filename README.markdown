@@ -10,7 +10,8 @@ Installation
 ---------
 Installation is pretty straight-forward. Just install the gem:
 
-  $ gem install epay
+  add to Gemfile
+  gem 'epay', :github => 'ykuzmenko/epay' 
 
 Usage
 ---------
