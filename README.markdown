@@ -8,10 +8,8 @@ Build status
 
 Installation
 ---------
-Installation is pretty straight-forward. Just install the gem:
+Installation is pretty straight-forward. Just add to Gemfile:
 
-  add to Gemfile
-  
   gem 'epay', :github => 'ykuzmenko/epay' 
 
 Usage
