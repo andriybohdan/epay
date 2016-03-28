@@ -62,6 +62,8 @@ module Epay
     
     def authorize(params = {})
       post = Api.default_post_for_params(params)
+
+      post[:instantcapture] = params[:instant_capture] ? '1' : '0'
       
       post[:subscriptionid] = id
       
@@ -75,7 +77,7 @@ module Epay
     end
     
     def delete
-      Epay::Api.request(SUBSCRIPTION_SOAP_URL, 'delete', :subscriptionid => id).success?
+      Epay::Api.request(SUBSCRIPTION_SOAP_URL, 'deletesubscription', :subscriptionid => id).success?
     end
     
     class << self

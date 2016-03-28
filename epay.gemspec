@@ -24,8 +24,8 @@ Gem::Specification.new do |s|
 
   # = Library dependencies
   #
-  s.add_dependency "rest-client", "~> 1.6.0"
-  s.add_dependency "activesupport", "~> 3"
+  s.add_dependency "rest-client", "~> 1.6"
+  s.add_dependency "activesupport", ">= 3.0.0"
   s.add_dependency "builder", "~> 3"
 
   # = Development dependencies
